@@ -13,8 +13,15 @@ As an input a "Human Activity Recognition Using Smartphones Data Set" was used. 
 Details on the data set can be obtained at: 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+###R Script usage
+Open and execute the script in R or RStudio
+
+###Transformations applied to raw data set by run_analysis.R script
+* Multiple files with test and training set data for sensors, activities and subjects were merged into one data set.
+* Only mean and standard deviation variables for each measurement were retained from the original data set. All others were dropped. As a result data set consists of only 68 features.
+* Labels were provided for the subject's activities
+* Labels for the variables were added for the data set
+* Data was aggregated, mean of the retained measurements was computed grouped by activity and Subject ID.
+
 ###Assumptions
 Working directory is already set by user, before executing the script.
-
-###R Script usage
-Open and execute the script in R or RStudio 

@@ -7,14 +7,35 @@ Additional variables like subject activity and subject ID's were provided in sep
 Data was collected from sensor signals (accelerometer and gyroscope) placed in Samsung Galaxy SII smartphone while being used by 30 subjects.
 Data can be used to analyze state of sensor signals during different daily activities.
 
-###Transformations applied to raw data set
-* Multiple files with test and training set data for sensors, activities and subjects were merged into one data set.
-* Only mean and standard deviation variables for each measurement were retained from the original data set. All others were dropped. As a result data set consists of only 68 features.
-* Labels were provided for the subject's activities
-* Labels for the variables were added for the data set
-* Data was aggregated, mean of the retained measurements was computed grouped by activity and Subject ID.
 
 ###Data set on the output 
+
+Resulting data set contains 180 rows and 68 columns of data.
+
+The below mentioned signals are still part of the resulting data set (
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions):
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+But only mean and standard deviation (std) measurements were retained from the original data set.
+
+Features are normalized and bounded within [-1,1] just as it was in the original file.
+
 Aggregated data set was saved to outputData.txt file. File contains a header that describes the variables. 
 A SubjectLabel column conveys information on the individual subject that performed the measurement.
 Activity variable tells us what kind of behaviour was performed during measurement 
