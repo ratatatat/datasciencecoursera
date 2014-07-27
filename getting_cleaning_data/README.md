@@ -2,7 +2,7 @@
 
 ###Files in current repository
 * run_analysis.R - script containing R code transforming used raw data set into tidy data set
-* README.md - currently read file
+* README.md - current file
 * CodeBook.md - description  of variables, data and information on how the resulting tidy data set was obtained
 
 ###R Script 
